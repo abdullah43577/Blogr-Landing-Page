@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="dist/ouput.css" type="text/css" />
+    <title>Frontend Mentor | [Blogr]</title>
+  </head>
+  <body class="relative h-screen w-screen">
+    <header class="h-[80vh]" id="top">
+      <div
+        class="container m-auto md:max-w-[1000px] pt-3 sm:max-w-[320px] lg:max-w-[700px]"
+      >
+        <nav class="flex justify-between items-center sm:mt-7 md:mt-0">
+          <div class="left md:flex items-center sm:hidden">
+            <picture>
+              <img src="./images/logo.svg" alt="logo" />
+            </picture>
+
+            <ul class="flex w-auto justify-between ml-10">
+              <li
+                class="menu relative px-[10px] hover:underline cursor-pointer text-whiteTxT"
+              >
+                <div class="menubtn flex items-center justify-center">
+                  <p>Product</p>
+                  <img
+                    src="./images/icon-arrow-light.svg"
+                    alt="icon-arrow-light"
+                    class="ml-[5px] h-[8px]"
+                  />
+                </div>
+                <ul class="hidden px-[15px] py-[20px] bg-white">
+                  <li
+                    class="text-veryDarkGrayishBlueBody hover:text-black hover:font-bold"
+                  >
+                    Overview
+                  </li>
+                  <li
+                    class="text-veryDarkGrayishBlueBody hover:text-black hover:font-bold"
+                  >
+                    Pricing
+                  </li>
+                  <li
+                    class="text-veryDarkGrayishBlueBody hover:text-black hover:font-bold"
+                  >
+                    Marketplace
+                  </li>
+                  <li
+                    class="text-veryDarkGrayishBlueBody hover:text-black hover:font-bold"
+                  >
+                    Features
+                  </li>
+                  <li
+                    class="text-veryDarkGrayishBlueBody hover:text-black hover:font-bold"
+                  >
+                    Integrations
+                  </li>
+                </ul>
+              </li>
+
+              <li
+                class="menu relative px-[10px] hover:underline cursor-pointer text-whiteTxT"
+              >
+                <div class="menubtn flex items-center justify-center">
+                  <p>Company</p>
+                  <img
+                    src="./images/icon-arrow-light.svg"
+                    alt="icon-arrow-light"
+                    class="ml-[5px] h-[8px]"
+                  />
+                </div>
+                <ul class="hidden px-[15px] py-[20px] bg-white">
+                  <li
+                    class="text-veryDarkGrayishBlueBody hover:text-black hover:font-bold"
+                  >
+                    About
+                  </li>
+                  <li
+                    class="text-veryDarkGrayishBlueBody hover:text-black hover:font-bold"
+                  >
+                    Team
+                  </li>
+                  <li
+                    class="text-veryDarkGrayishBlueBody hover:text-black hover:font-bold"
+                  >
+                    Blog
+                  </li>
+                  <li
+                    class="text-veryDarkGrayishBlueBody hover:text-black hover:font-bold"
+                  >
+                    Careers
+                  </li>
+                </ul>
+              </li>
+
+              <li
+                class="menu relative px-[10px] hover:underline cursor-pointer text-whiteTxT"
+              >
+                <div class="menubtn flex items-center">
+                  <p>Connect</p>
+                  <img
+                    src="./images/icon-arrow-light.svg"
+                    alt="icon-arrow-light"
+                    class="ml-[5px] h-[8px]"
+                  />
+                </div>
+                <ul class="hidden px-[15px] py-[20px] bg-white">
+                  <li
+                    class="text-veryDarkGrayishBlueBody hover:text-black hover:font-bold"
+                  >
+                    Contact
+                  </li>
+                  <li
+                    class="text-veryDarkGrayishBlueBody hover:text-black hover:font-bold"
+                  >
+                    Newsletter
+                  </li>
+                  <li
+                    class="text-veryDarkGrayishBlueBody hover:text-black hover:font-bold"
+                  >
+                    LinkedIn
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="right sm:hidden md:block">
+            <a href="" class="capitalize text-whiteTxT">login</a>
+            <button
+              class="capitalize px-5 py-[8px] bg-lightRedCTA rounded-full text-white ml-[15px] hover:bg-veryLightRedHoverBG"
+            >
+              sign up
+            </button>
+          </div>
+
+          <!-- mobile menu -->
+          <picture class="md:hidden sm:block">
+            <img src="./images/logo.svg" alt="logo" />
+          </picture>
+
+          <div class="md:hidden sm:block menubar">
+            <div class="barbar1"></div>
+            <div class="barbar2"></div>
+            <div class="barbar3"></div>
+          </div>
+        </nav>
+
+        <div class="main flex flex-col items-center justify-center h-[60vh]">
+          <h3 class="sm:text-4xl sm:text-center md:text-6xl text-whiteTxT">
+            A modern publishing platform
+          </h3>
+          <p class="text-whiteTxT mt-3 mb-6 sm:text-center">
+            Grow your audience and build your online brand
+          </p>
+
+          <div class="btn_section">
+            <button
+              class="capitalize px-5 py-[8px] text-lightRedCTA rounded-full bg-whiteTxT hover:bg-veryLightRedHoverBG hover:text-whiteTxT font-bold"
+            >
+              start for free
+            </button>
+
+            <button
+              class="capitalize px-5 py-[8px] text-whiteTxT rounded-full ml-[15px] bg-transparent font-bold border-whiteTxT border hover:bg-whiteTxT hover:text-lightRedCTA"
+            >
+              learn more
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <h2
+        class="text-veryDarkDesaturatedBlue text-2xl font-bold text-center mt-16"
+      >
+        Designed for the future
+      </h2>
+      <div
+        class="container md:max-w-[1000px] mx-auto first_slide flex justify-between items-center md:flex-row sm:flex-col-reverse sm:max-w-[320px]"
+      >
+        <div
+          class="content md:w-[400px] sm:w-[300px] sm:text-center md:text-start"
+        >
+          <div class="hd mb-14">
+            <h2 class="mb-3 text-veryDarkDesaturatedBlue font-bold text-[18px]">
+              Introducing an extensible editor
+            </h2>
+            <p class="text-[14px] leading-[24px]">
+              Blogr features an exceedingly intuitive interface which lets you
+              focus on one thing: creating content. The editor supports
+              management of multiple blogs and allows easy manipulation of
+              embeds such as images, videos, and Markdown. Extensibility with
+              plugins and themes provide easy ways to add functionality or
+              change the looks of a blog.
+            </p>
+          </div>
+
+          <div class="hd2">
+            <h2 class="mb-3 text-veryDarkDesaturatedBlue font-bold text-[18px]">
+              Robust content management
+            </h2>
+            <p class="text-[14px] leading-[24px]">
+              Flexible content management enables users to easily move through
+              posts. Increase the usability of your blog by adding customized
+              categories, sections, format, or flow. With this functionality,
+              you’re in full control.
+            </p>
+          </div>
+        </div>
+
+        <picture class="md:w-[700px] sm:w-[300px]">
+          <img
+            src="./images/illustration-editor-desktop.svg"
+            alt="illustration-editor-desktop"
+            class="w-full"
+          />
+        </picture>
+      </div>
+
+      <!-- second slide -->
+      <div
+        class="second_slide bg-veryDarkDesaturatedBlue md:h-[300px] sm:mt-64 sm:h-auto"
+      >
+        <div
+          class="container md:max-w-[1000px] mx-auto flex md:flex-row justify-between items-center mt-4 sm:max-w-[300px] sm:flex-col"
+        >
+          <picture
+            class="md:w-[400px] md:mt-[-50px] sm:w-[300px] sm:mt-[-150px]"
+          >
+            <img
+              src="./images/illustration-phones.svg"
+              alt="illustration-phones"
+              class="w-full"
+            />
+          </picture>
+
+          <div
+            class="content md:w-1/2 md:mt-[-100px] sm:mt-auto sm:w-full sm:text-center sm:pb-6"
+          >
+            <h2 class="text-3xl text-whiteTxT mb-4">
+              State of the Art Infrastructure
+            </h2>
+            <p class="text-whiteTxT text-[14px] leading-[24px]">
+              With reliability and speed in mind, worldwide data centers provide
+              the backbone for ultra-fast connectivity. This ensures your site
+              will load instantly, no matter where your readers are, keeping
+              your site competitive.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- third slide -->
+      <div
+        class="container md:max-w-[1000px] mx-auto first_slide flex justify-between items-center mt-14 md:flex-row-reverse sm:flex-col-reverse sm:max-w-[320px]"
+      >
+        <div class="content md:w-1/2 sm:w-auto text-center">
+          <div class="hd mb-14">
+            <h2 class="mb-3 text-veryDarkDesaturatedBlue font-bold text-[18px]">
+              Free, open, simple
+            </h2>
+            <p class="text-[14px] leading-[24px]">
+              Blogr is a free and open source application backed by a large
+              community of helpful developers. It supports features such as code
+              syntax highlighting, RSS feeds, social media integration,
+              third-party commenting tools, and works seamlessly with Google
+              Analytics. The architecture is clean and is relatively easy to
+              learn.
+            </p>
+          </div>
+
+          <div class="hd2">
+            <h2 class="mb-3 text-veryDarkDesaturatedBlue font-bold text-[18px]">
+              Powerful tooling
+            </h2>
+            <p class="text-[14px] leading-[24px]">
+              Batteries included. We built a simple and straightforward CLI tool
+              that makes customization and deployment a breeze, but capable of
+              producing even the most complicated sites.
+            </p>
+          </div>
+        </div>
+
+        <picture class="md:w-[800px] md:ml-[-400px] sm:w-[300px] sm:ml-0">
+          <img
+            src="./images/illustration-laptop-desktop.svg"
+            alt="illustration-laptop-desktop"
+            class="w-full"
+          />
+        </picture>
+      </div>
+    </main>
+
+    <footer class="relative bg-veryDarkBlackBlueFooter md:mt-0 sm:mt-32">
+      <div
+        class="content container md:max-w-[1000px] mx-auto flex md:flex-row md:items-start justify-between pt-10 pb-8 sm:max-w-[320px] sm:flex-col sm:items-center"
+      >
+        <picture class="sm:mb-4 md:mb-0">
+          <img src="./images/logo.svg" alt="logo" />
+        </picture>
+
+        <ul
+          class="flex md:flex-row justify-around md:w-3/4 sm:flex-col sm:w-auto"
+        >
+          <li class="sm:mt-6 md:mt-0">
+            <p class="mb-4 text-whiteTxT">Product</p>
+            <ul>
+              <li
+                class="text-grayishBlueFooterTxt hover:underline hover:cursor-pointer"
+              >
+                Overview
+              </li>
+              <li
+                class="text-grayishBlueFooterTxt hover:underline hover:cursor-pointer"
+              >
+                Pricing
+              </li>
+              <li
+                class="text-grayishBlueFooterTxt hover:underline hover:cursor-pointer"
+              >
+                Marketplace
+              </li>
+              <li
+                class="text-grayishBlueFooterTxt hover:underline hover:cursor-pointer"
+              >
+                Features
+              </li>
+              <li
+                class="text-grayishBlueFooterTxt hover:underline hover:cursor-pointer"
+              >
+                Integrations
+              </li>
+            </ul>
+          </li>
+
+          <li class="sm:mt-6 md:mt-0">
+            <p class="mb-4 text-whiteTxT">Company</p>
+            <ul>
+              <li
+                class="text-grayishBlueFooterTxt hover:underline hover:cursor-pointer"
+              >
+                About
+              </li>
+              <li
+                class="text-grayishBlueFooterTxt hover:underline hover:cursor-pointer"
+              >
+                Team
+              </li>
+              <li
+                class="text-grayishBlueFooterTxt hover:underline hover:cursor-pointer"
+              >
+                Blog
+              </li>
+              <li
+                class="text-grayishBlueFooterTxt hover:underline hover:cursor-pointer"
+              >
+                Careers
+              </li>
+            </ul>
+          </li>
+
+          <li class="sm:mb-4 md:mb-0 sm:mt-6 md:mt-0">
+            <p class="mb-4 text-whiteTxT">Connect</p>
+            <ul>
+              <li
+                class="text-grayishBlueFooterTxt hover:underline hover:cursor-pointer"
+              >
+                Contact
+              </li>
+              <li
+                class="text-grayishBlueFooterTxt hover:underline hover:cursor-pointer"
+              >
+                Newsletter
+              </li>
+              <li
+                class="text-grayishBlueFooterTxt hover:underline hover:cursor-pointer"
+              >
+                LinkedIn
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="attribution absolute bottom-5 left-5 text-black hidden">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          class="text-orange-400"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="#" target="_blank" class="text-orange-400">Abdullah Ayoola</a>.
+      </div>
+
+      <div
+        class="toTop bg-whiteTxT text-lightRedCTA px-2 py-1 rounded absolute bottom-3 right-10 hover:bg-lightRedCTA hover:text-whiteTxT"
+      >
+        <a href="#top" class="capitalize">back to top</a>
+      </div>
+    </footer>
+  </body>
+</html>
