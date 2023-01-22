@@ -70,3 +70,40 @@ footer {
   background-color: white;
   margin: 5px 0;
 }
+
+@media (min-width: 350px) {
+  .left {
+    position: absolute;
+    top: 15vh;
+    background-color: rgb(121, 74, 74);
+    height: 70vh;
+    padding: 20px 80px;
+    margin-left: 40px;
+    transition: transform 1s ease;
+    transform: translateX(300px);
+
+    &.active {
+      transform: translateX(0px);
+    }
+  }
+
+  ul.listItem {
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+
+    > li {
+      color: black;
+      padding: 15px 0;
+    }
+
+    // .menudrop {
+    //   background-color: gray;
+    //   position: unset;
+    // }
+
+    // li.menu:hover > ul {
+    //   display: block;
+    // }
+  }
+}

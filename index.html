@@ -16,15 +16,15 @@
   <body class="relative h-screen w-screen">
     <header class="h-[80vh]" id="top">
       <div
-        class="container m-auto md:max-w-[1000px] pt-3 sm:max-w-[320px] lg:max-w-[700px]"
+        class="container m-auto xl:max-w-[1000px] pt-3 sm:max-w-[320px] lg:max-w-[700px]"
       >
         <nav class="flex justify-between items-center sm:mt-7 md:mt-0">
-          <div class="left md:flex items-center sm:hidden">
-            <picture>
+          <div class="left md:flex items-center hidden">
+            <picture class="sm:hidden md:flex">
               <img src="./images/logo.svg" alt="logo" />
             </picture>
 
-            <ul class="flex w-auto justify-between ml-10">
+            <ul class="listItem flex w-auto justify-between ml-10">
               <li
                 class="menu relative px-[10px] hover:underline cursor-pointer text-whiteTxT"
               >
@@ -36,7 +36,7 @@
                     class="ml-[5px] h-[8px]"
                   />
                 </div>
-                <ul class="hidden px-[15px] py-[20px] bg-white">
+                <ul class="menudrop hidden px-[15px] py-[20px] bg-white">
                   <li
                     class="text-veryDarkGrayishBlueBody hover:text-black hover:font-bold"
                   >
@@ -185,10 +185,10 @@
         Designed for the future
       </h2>
       <div
-        class="container md:max-w-[1000px] mx-auto first_slide flex justify-between items-center md:flex-row sm:flex-col-reverse sm:max-w-[320px]"
+        class="container xl:max-w-[1000px] lg:max-w-[700px] mx-auto first_slide flex justify-between items-center md:flex-row sm:flex-col-reverse sm:max-w-[320px] md:mt-4 xl:mt-0"
       >
         <div
-          class="content md:w-[400px] sm:w-[300px] sm:text-center md:text-start"
+          class="content xl:w-[500px] sm:w-[300px] sm:text-center md:text-start"
         >
           <div class="hd mb-14">
             <h2 class="mb-3 text-veryDarkDesaturatedBlue font-bold text-[18px]">
@@ -217,7 +217,7 @@
           </div>
         </div>
 
-        <picture class="md:w-[700px] sm:w-[300px]">
+        <picture class="xl:w-[700px] lg:w-[400px] sm:w-[300px]">
           <img
             src="./images/illustration-editor-desktop.svg"
             alt="illustration-editor-desktop"
@@ -231,7 +231,7 @@
         class="second_slide bg-veryDarkDesaturatedBlue md:h-[300px] sm:mt-64 sm:h-auto"
       >
         <div
-          class="container md:max-w-[1000px] mx-auto flex md:flex-row justify-between items-center mt-4 sm:max-w-[300px] sm:flex-col"
+          class="container xl:max-w-[1000px] lg:max-w-[700px] mx-auto flex md:flex-row justify-between items-center mt-4 sm:max-w-[300px] sm:flex-col"
         >
           <picture
             class="md:w-[400px] md:mt-[-50px] sm:w-[300px] sm:mt-[-150px]"
@@ -261,9 +261,9 @@
 
       <!-- third slide -->
       <div
-        class="container md:max-w-[1000px] mx-auto first_slide flex justify-between items-center mt-14 md:flex-row-reverse sm:flex-col-reverse sm:max-w-[320px]"
+        class="container xl:max-w-[1000px] lg:max-w-[700px] mx-auto first_slide flex justify-between items-center mt-14 md:flex-row-reverse sm:flex-col-reverse sm:max-w-[320px]"
       >
-        <div class="content md:w-1/2 sm:w-auto text-center">
+        <div class="content md:w-1/2 sm:w-auto text-center lg:mr-6 xl:mr-0">
           <div class="hd mb-14">
             <h2 class="mb-3 text-veryDarkDesaturatedBlue font-bold text-[18px]">
               Free, open, simple
@@ -302,7 +302,7 @@
 
     <footer class="relative bg-veryDarkBlackBlueFooter md:mt-0 sm:mt-32">
       <div
-        class="content container md:max-w-[1000px] mx-auto flex md:flex-row md:items-start justify-between pt-10 pb-8 sm:max-w-[320px] sm:flex-col sm:items-center"
+        class="content container xl:max-w-[1000px] lg:max-w-[700px] mx-auto flex md:flex-row md:items-start justify-between pt-10 pb-8 sm:max-w-[320px] sm:flex-col sm:items-center"
       >
         <picture class="sm:mb-4 md:mb-0">
           <img src="./images/logo.svg" alt="logo" />
@@ -408,5 +408,7 @@
         <a href="#top" class="capitalize">back to top</a>
       </div>
     </footer>
+
+    <script src="/app/script.js"></script>
   </body>
 </html>
