@@ -19,21 +19,30 @@
         class="container m-auto xl:max-w-[1000px] pt-3 sm:max-w-[320px] lg:max-w-[700px]"
       >
         <nav class="flex justify-between items-center sm:mt-7 md:mt-0">
-          <div class="left md:flex items-center hidden">
+          <div
+            class="left items-center md:flex sm:absolute md:relative sm:w-[300px] md:w-auto sm:h-[60vh] md:h-[auto] sm:bg-whiteTxT md:bg-transparent sm:top-[15vh] md:top-0"
+          >
             <picture class="sm:hidden md:flex">
               <img src="./images/logo.svg" alt="logo" />
             </picture>
 
-            <ul class="listItem flex w-auto justify-between ml-10">
+            <ul
+              class="listItem flex w-auto justify-between md:ml-10 sm:ml-0 sm:flex-col md:flex-row sm:items-center md:items-start"
+            >
               <li
-                class="menu relative px-[10px] hover:underline cursor-pointer text-whiteTxT"
+                class="menu relative md:px-[10px] hover:underline cursor-pointer md:text-whiteTxT sm:text-veryDarkBlackBlueFooter sm:py-[10px] sm:px-0 md:py-[0px]"
               >
                 <div class="menubtn flex items-center justify-center">
                   <p>Product</p>
                   <img
                     src="./images/icon-arrow-light.svg"
                     alt="icon-arrow-light"
-                    class="ml-[5px] h-[8px]"
+                    class="ml-[5px] h-[8px] sm:hidden md:block"
+                  />
+                  <img
+                    src="./images/icon-arrow-dark.svg"
+                    alt="icon-arrow-dark"
+                    class="ml-[5px] h-[8px] md:hidden sm:block"
                   />
                 </div>
                 <ul class="menudrop hidden px-[15px] py-[20px] bg-white">
@@ -66,14 +75,19 @@
               </li>
 
               <li
-                class="menu relative px-[10px] hover:underline cursor-pointer text-whiteTxT"
+                class="menu relative md:px-[10px] hover:underline cursor-pointer md:text-whiteTxT sm:text-veryDarkBlackBlueFooter sm:py-[10px] sm:px-0 md:py-[0px]"
               >
                 <div class="menubtn flex items-center justify-center">
                   <p>Company</p>
                   <img
                     src="./images/icon-arrow-light.svg"
                     alt="icon-arrow-light"
-                    class="ml-[5px] h-[8px]"
+                    class="ml-[5px] h-[8px] sm:hidden md:block"
+                  />
+                  <img
+                    src="./images/icon-arrow-dark.svg"
+                    alt="icon-arrow-dark"
+                    class="ml-[5px] h-[8px] md:hidden sm:block"
                   />
                 </div>
                 <ul class="hidden px-[15px] py-[20px] bg-white">
@@ -101,14 +115,19 @@
               </li>
 
               <li
-                class="menu relative px-[10px] hover:underline cursor-pointer text-whiteTxT"
+                class="menu relative md:px-[10px] hover:underline cursor-pointer md:text-whiteTxT sm:text-veryDarkBlackBlueFooter sm:py-[10px] sm:px-0 md:py-[0px]"
               >
                 <div class="menubtn flex items-center">
                   <p>Connect</p>
                   <img
                     src="./images/icon-arrow-light.svg"
                     alt="icon-arrow-light"
-                    class="ml-[5px] h-[8px]"
+                    class="ml-[5px] h-[8px] sm:hidden md:block"
+                  />
+                  <img
+                    src="./images/icon-arrow-dark.svg"
+                    alt="icon-arrow-dark"
+                    class="ml-[5px] h-[8px] md:hidden sm:block"
                   />
                 </div>
                 <ul class="hidden px-[15px] py-[20px] bg-white">
@@ -132,10 +151,16 @@
             </ul>
           </div>
 
-          <div class="right sm:hidden md:block">
-            <a href="" class="capitalize text-whiteTxT">login</a>
+          <div
+            class="right sm:absolute md:relative sm:w-[300px] md:w-auto sm:top-[70vh] md:top-0 sm:bg-whiteTxT md:bg-transparent sm:flex md:block sm:flex-row sm:items-center sm:py-[20px] md:py-0"
+          >
+            <a
+              href=""
+              class="capitalize sm:text-veryDarkDesaturatedBlue md:text-whiteTxT sm:font-bold md:font-normal"
+              >login</a
+            >
             <button
-              class="capitalize px-5 py-[8px] bg-lightRedCTA rounded-full text-white ml-[15px] hover:bg-veryLightRedHoverBG"
+              class="capitalize md:px-5 md:py-[8px] bg-lightRedCTA rounded-full text-white md:ml-[15px] hover:bg-veryLightRedHoverBG sm:ml-0 sm:mt-2 md:mt-0 sm:font-bold md:font-normal sm:py-[8px] sm:px-[15px]"
             >
               sign up
             </button>

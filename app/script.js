@@ -1,8 +1,11 @@
 "use strict";
 const menubar = document.querySelector(".menubar");
-const menu = document.querySelector(".left");
+const left = document.querySelector(".left");
+const right = document.querySelector(".right");
 
 menubar.addEventListener("click", () => {
-  menu.classList.toggle("hidden");
-  menu.classList.toggle("active");
+  left.classList.toggle("open");
+
+  //   right.classList.toggle("hidden");
+  //   right.classList.toggle("open");
 });
