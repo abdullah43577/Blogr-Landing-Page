@@ -55,21 +55,47 @@ footer {
   border-top-right-radius: 100px;
 }
 
-.menubar > div {
-  height: 3px;
-  width: 30px;
-  background-color: white;
-  margin: 5px 0;
-}
-
-@media (max-width: 370px) {
+@media (max-width: 576px) {
+  .left,
   .right {
     transform: translateX(400px);
     transition: transform 1s ease;
   }
-  div.left.open {
+  .right {
+    justify-content: space-around;
+    border-top: 1px solid gray;
+  }
+  div.left.open,
+  div.right.open {
     transform: translateX(0px);
   }
+  ul.menudrop {
+    background-color: gray;
+    margin-bottom: 20px;
+  }
+  ul.listItem {
+    margin-top: 40px;
+    font-size: 20px;
+  }
+}
+.menubar div {
+  height: 3px;
+  width: 30px;
+  background-color: white;
+  margin: 5px 0;
+  transition: transform 500ms ease;
+}
+
+.toggle .bar1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .bar2 {
+  opacity: 0;
+}
+
+.toggle .bar3 {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
 
 /*# sourceMappingURL=styles.css.map */
