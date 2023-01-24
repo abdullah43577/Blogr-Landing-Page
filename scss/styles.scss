@@ -77,24 +77,28 @@ footer {
     @apply capitalize rounded-full;
   }
 
-  .hd > h2 {
-    @apply mb-3 text-veryDarkDesaturatedBlue font-bold text-[18px];
+  .hd {
+    > h2 {
+      @apply mb-3 text-veryDarkDesaturatedBlue font-bold text-[18px];
+    }
+
+    > p {
+      @apply text-[14px] leading-[24px];
+    }
   }
 
-  .hd > p {
-    @apply text-[14px] leading-[24px];
-  }
+  ul.listEl {
+    > li {
+      @apply sm:mt-6 md:mt-0;
 
-  ul.listEl > li {
-    @apply sm:mt-6 md:mt-0;
-  }
+      > p {
+        @apply mb-4 text-whiteTxT;
+      }
 
-  ul.listEl > li > p {
-    @apply mb-4 text-whiteTxT;
-  }
-
-  ul.listEl > li > ul > li {
-    @apply text-grayishBlueFooterTxt hover:underline hover:cursor-pointer;
+      > ul > li {
+        @apply text-grayishBlueFooterTxt hover:underline hover:cursor-pointer;
+      }
+    }
   }
 }
 
@@ -128,9 +132,6 @@ footer {
 
   li.menu:hover > ul {
     display: unset;
-    // position: absolute;
-    // top: 3.5vh;
-    // border-radius: 5px;
   }
 
   li.menu:hover > .menubtn > img {

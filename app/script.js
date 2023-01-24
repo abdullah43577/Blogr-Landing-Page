@@ -1,4 +1,5 @@
 "use strict";
+
 const menubar = document.querySelector(".menubar");
 const left = document.querySelector(".left");
 const right = document.querySelector(".right");

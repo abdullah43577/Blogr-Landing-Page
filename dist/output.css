@@ -1110,10 +1110,6 @@ footer {
     width: auto;
   }
 
-  .sm\:max-w-\[300px\]{
-    max-width: 300px;
-  }
-
   .sm\:flex-row{
     flex-direction: row;
   }
