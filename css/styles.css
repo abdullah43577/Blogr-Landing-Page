@@ -81,6 +81,9 @@ footer {
   ul.listEl > li > ul > li {
     @apply text-grayishBlueFooterTxt hover:underline hover:cursor-pointer;
   }
+  li.menu {
+    @apply relative md:px-[10px] hover:underline cursor-pointer md:text-whiteTxT sm:text-veryDarkBlackBlueFooter sm:py-[10px] sm:px-0 md:py-[0px];
+  }
 }
 @media (max-width: 576px) {
   .left,

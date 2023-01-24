@@ -625,6 +625,37 @@ ul.listEl > li > ul > li:hover{
   text-decoration-line: underline;
 }
 
+li.menu{
+  position: relative;
+  cursor: pointer;
+}
+
+li.menu:hover{
+  text-decoration-line: underline;
+}
+
+@media (min-width: 300px){
+  li.menu{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    --tw-text-opacity: 1;
+    color: hsl(240 10% 16% / var(--tw-text-opacity));
+  }
+}
+
+@media (min-width: 576px){
+  li.menu{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    --tw-text-opacity: 1;
+    color: hsl(0 0% 100% / var(--tw-text-opacity));
+  }
+}
+
 .absolute{
   position: absolute;
 }
@@ -719,10 +750,6 @@ ul.listEl > li > ul > li:hover{
 
 .w-auto{
   width: auto;
-}
-
-.cursor-pointer{
-  cursor: pointer;
 }
 
 .flex-col{
@@ -1025,10 +1052,6 @@ footer {
   color: hsl(356 100% 66% / var(--tw-text-opacity));
 }
 
-.hover\:underline:hover{
-  text-decoration-line: underline;
-}
-
 @media (min-width: 300px){
   .sm\:absolute{
     position: absolute;
@@ -1135,16 +1158,6 @@ footer {
     background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
   }
 
-  .sm\:py-\[10px\]{
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  .sm\:px-0{
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
   .sm\:py-\[20px\]{
     padding-top: 20px;
     padding-bottom: 20px;
@@ -1175,11 +1188,6 @@ footer {
 
   .sm\:font-bold{
     font-weight: 700;
-  }
-
-  .sm\:text-veryDarkBlackBlueFooter{
-    --tw-text-opacity: 1;
-    color: hsl(240 10% 16% / var(--tw-text-opacity));
   }
 
   .sm\:text-veryDarkDesaturatedBlue{
@@ -1285,16 +1293,6 @@ footer {
     background-color: transparent;
   }
 
-  .md\:px-\[10px\]{
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .md\:py-\[0px\]{
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-
   .md\:py-0{
     padding-top: 0px;
     padding-bottom: 0px;
@@ -1357,4 +1355,4 @@ footer {
   }
 }
 
-/*# sourceMappingURL=ouput.css.map */
+/*# sourceMappingURL=output.css.map */
