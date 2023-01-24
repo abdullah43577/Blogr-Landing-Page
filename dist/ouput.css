@@ -545,6 +545,86 @@ video {
   }
 }
 
+.container{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 300px){
+  .container{
+    max-width: 320px;
+  }
+}
+
+@media (min-width: 768px){
+  .container{
+    max-width: 700px;
+  }
+}
+
+@media (min-width: 1240px){
+  .container{
+    max-width: 1000px;
+  }
+}
+
+.menudrop > li{
+  --tw-text-opacity: 1;
+  color: hsl(207 13% 34% / var(--tw-text-opacity));
+}
+
+.menudrop > li:hover{
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+button{
+  border-radius: 9999px;
+  text-transform: capitalize;
+}
+
+.hd > h2{
+  margin-bottom: 0.75rem;
+  font-size: 18px;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: hsl(237 23% 32% / var(--tw-text-opacity));
+}
+
+.hd > p{
+  font-size: 14px;
+  line-height: 24px;
+}
+
+@media (min-width: 300px){
+  ul.listEl > li{
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width: 576px){
+  ul.listEl > li{
+    margin-top: 0px;
+  }
+}
+
+ul.listEl > li > p{
+  margin-bottom: 1rem;
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 100% / var(--tw-text-opacity));
+}
+
+ul.listEl > li > ul > li{
+  --tw-text-opacity: 1;
+  color: hsl(240 2% 79% / var(--tw-text-opacity));
+}
+
+ul.listEl > li > ul > li:hover{
+  cursor: pointer;
+  text-decoration-line: underline;
+}
+
 .absolute{
   position: absolute;
 }
@@ -567,15 +647,6 @@ video {
 
 .right-10{
   right: 2.5rem;
-}
-
-.m-auto{
-  margin: auto;
-}
-
-.mx-auto{
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .ml-\[5px\]{
@@ -602,10 +673,6 @@ video {
   margin-bottom: 3.5rem;
 }
 
-.mb-3{
-  margin-bottom: 0.75rem;
-}
-
 .mt-4{
   margin-top: 1rem;
 }
@@ -616,6 +683,10 @@ video {
 
 .mt-14{
   margin-top: 3.5rem;
+}
+
+.mb-3{
+  margin-bottom: 0.75rem;
 }
 
 .flex{
@@ -672,10 +743,6 @@ video {
 
 .justify-around{
   justify-content: space-around;
-}
-
-.rounded-full{
-  border-radius: 9999px;
 }
 
 .rounded{
@@ -771,17 +838,13 @@ video {
   line-height: 2rem;
 }
 
-.text-\[18px\]{
-  font-size: 18px;
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-\[14px\]{
   font-size: 14px;
-}
-
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .font-bold{
@@ -794,11 +857,6 @@ video {
 
 .leading-\[24px\]{
   line-height: 24px;
-}
-
-.text-veryDarkGrayishBlueBody{
-  --tw-text-opacity: 1;
-  color: hsl(207 13% 34% / var(--tw-text-opacity));
 }
 
 .text-white{
@@ -819,11 +877,6 @@ video {
 .text-veryDarkDesaturatedBlue{
   --tw-text-opacity: 1;
   color: hsl(237 23% 32% / var(--tw-text-opacity));
-}
-
-.text-grayishBlueFooterTxt{
-  --tw-text-opacity: 1;
-  color: hsl(240 2% 79% / var(--tw-text-opacity));
 }
 
 .text-black{
@@ -894,6 +947,7 @@ footer {
   .right {
     transform: translateX(400px);
     transition: transform 1s ease;
+    box-shadow: 10px 5px 10px 5px rgba(0, 0, 0, 0.5);
   }
 
   .right {
@@ -914,6 +968,15 @@ footer {
   ul.listItem {
     margin-top: 40px;
     font-size: 20px;
+  }
+
+  li.menu:hover > ul {
+    display: unset;
+  }
+
+  li.menu:hover > .menubtn > img {
+    transform: rotate(0deg);
+    transition: transform 0.5s ease;
   }
 }
 
@@ -937,10 +1000,6 @@ footer {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-.hover\:cursor-pointer:hover{
-  cursor: pointer;
-}
-
 .hover\:bg-veryLightRedHoverBG:hover{
   --tw-bg-opacity: 1;
   background-color: hsl(355 100% 74% / var(--tw-bg-opacity));
@@ -954,15 +1013,6 @@ footer {
 .hover\:bg-lightRedCTA:hover{
   --tw-bg-opacity: 1;
   background-color: hsl(356 100% 66% / var(--tw-bg-opacity));
-}
-
-.hover\:font-bold:hover{
-  font-weight: 700;
-}
-
-.hover\:text-black:hover{
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .hover\:text-whiteTxT:hover{
@@ -1060,10 +1110,6 @@ footer {
     width: auto;
   }
 
-  .sm\:max-w-\[320px\]{
-    max-width: 320px;
-  }
-
   .sm\:max-w-\[300px\]{
     max-width: 300px;
   }
@@ -1078,6 +1124,10 @@ footer {
 
   .sm\:flex-col-reverse{
     flex-direction: column-reverse;
+  }
+
+  .sm\:items-start{
+    align-items: flex-start;
   }
 
   .sm\:items-center{
@@ -1291,10 +1341,6 @@ footer {
   .lg\:w-\[400px\]{
     width: 400px;
   }
-
-  .lg\:max-w-\[700px\]{
-    max-width: 700px;
-  }
 }
 
 @media (min-width: 1240px){
@@ -1312,10 +1358,6 @@ footer {
 
   .xl\:w-\[700px\]{
     width: 700px;
-  }
-
-  .xl\:max-w-\[1000px\]{
-    max-width: 1000px;
   }
 }
 

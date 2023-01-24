@@ -1,11 +1,11 @@
+@use "config";
+
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import "config";
 
 html {
   scroll-behavior: smooth;
@@ -22,8 +22,7 @@ html {
 
 body {
   overflow-x: hidden;
-  font-family: "Overpass", sans-serif;
-  //   font-family: 'Ubuntu', sans-serif;
+  font-family: config.$font1;
 }
 
 header {
@@ -65,11 +64,46 @@ footer {
   border-top-right-radius: 100px;
 }
 
+@layer components {
+  .container {
+    @apply mx-auto xl:max-w-[1000px] sm:max-w-[320px] lg:max-w-[700px];
+  }
+
+  .menudrop > li {
+    @apply text-veryDarkGrayishBlueBody hover:text-black hover:font-bold;
+  }
+
+  button {
+    @apply capitalize rounded-full;
+  }
+
+  .hd > h2 {
+    @apply mb-3 text-veryDarkDesaturatedBlue font-bold text-[18px];
+  }
+
+  .hd > p {
+    @apply text-[14px] leading-[24px];
+  }
+
+  ul.listEl > li {
+    @apply sm:mt-6 md:mt-0;
+  }
+
+  ul.listEl > li > p {
+    @apply mb-4 text-whiteTxT;
+  }
+
+  ul.listEl > li > ul > li {
+    @apply text-grayishBlueFooterTxt hover:underline hover:cursor-pointer;
+  }
+}
+
 @media (max-width: 576px) {
   .left,
   .right {
     transform: translateX(400px);
     transition: transform 1s ease;
+    box-shadow: 10px 5px 10px 5px rgb(0 0 0 / 50%);
   }
 
   .right {
@@ -90,6 +124,18 @@ footer {
   ul.listItem {
     margin-top: 40px;
     font-size: 20px;
+  }
+
+  li.menu:hover > ul {
+    display: unset;
+    // position: absolute;
+    // top: 3.5vh;
+    // border-radius: 5px;
+  }
+
+  li.menu:hover > .menubtn > img {
+    transform: rotate(0deg);
+    transition: transform 0.5s ease;
   }
 }
 

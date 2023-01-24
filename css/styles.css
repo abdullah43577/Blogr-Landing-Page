@@ -56,11 +56,38 @@ footer {
   border-top-right-radius: 100px;
 }
 
+@layer components {
+  .container {
+    @apply mx-auto xl:max-w-[1000px] sm:max-w-[320px] lg:max-w-[700px];
+  }
+  .menudrop > li {
+    @apply text-veryDarkGrayishBlueBody hover:text-black hover:font-bold;
+  }
+  button {
+    @apply capitalize rounded-full;
+  }
+  .hd > h2 {
+    @apply mb-3 text-veryDarkDesaturatedBlue font-bold text-[18px];
+  }
+  .hd > p {
+    @apply text-[14px] leading-[24px];
+  }
+  ul.listEl > li {
+    @apply sm:mt-6 md:mt-0;
+  }
+  ul.listEl > li > p {
+    @apply mb-4 text-whiteTxT;
+  }
+  ul.listEl > li > ul > li {
+    @apply text-grayishBlueFooterTxt hover:underline hover:cursor-pointer;
+  }
+}
 @media (max-width: 576px) {
   .left,
   .right {
     transform: translateX(400px);
     transition: transform 1s ease;
+    box-shadow: 10px 5px 10px 5px rgba(0, 0, 0, 0.5);
   }
   .right {
     justify-content: space-around;
@@ -77,6 +104,13 @@ footer {
   ul.listItem {
     margin-top: 40px;
     font-size: 20px;
+  }
+  li.menu:hover > ul {
+    display: unset;
+  }
+  li.menu:hover > .menubtn > img {
+    transform: rotate(0deg);
+    transition: transform 0.5s ease;
   }
 }
 .menubar div {
