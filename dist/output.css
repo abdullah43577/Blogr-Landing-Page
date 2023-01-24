@@ -584,7 +584,8 @@ button{
   text-transform: capitalize;
 }
 
-.hd > h2{
+.hd > h2,
+  .hd2 > h2{
   margin-bottom: 0.75rem;
   font-size: 18px;
   font-weight: 700;
@@ -592,7 +593,8 @@ button{
   color: hsl(237 23% 32% / var(--tw-text-opacity));
 }
 
-.hd > p{
+.hd > p,
+  .hd2 > p{
   font-size: 14px;
   line-height: 24px;
 }
@@ -998,7 +1000,7 @@ footer {
   }
 
   li.menu:hover > ul {
-    display: unset;
+    display: none;
   }
 
   li.menu:hover > .menubtn > img {

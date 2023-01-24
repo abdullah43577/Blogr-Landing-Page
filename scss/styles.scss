@@ -1,11 +1,11 @@
-@use "config";
-
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import "config";
 
 html {
   scroll-behavior: smooth;
@@ -22,7 +22,7 @@ html {
 
 body {
   overflow-x: hidden;
-  font-family: config.$font1;
+  font-family: $font1;
 }
 
 header {
@@ -31,7 +31,7 @@ header {
     hsl(13, 100%, 72%),
     hsl(353, 100%, 62%)
   );
-  border-bottom-left-radius: 50px;
+  @include borderRadius(bottom);
 }
 
 .menu > ul > li {
@@ -56,12 +56,12 @@ li.menu:hover > .menubtn > img {
 }
 
 .second_slide {
-  border-top-right-radius: 100px;
-  border-bottom-left-radius: 50px;
+  @include borderRadius(top);
+  @include borderRadius(bottom);
 }
 
 footer {
-  border-top-right-radius: 100px;
+  @include borderRadius(top);
 }
 
 @layer components {
@@ -77,7 +77,8 @@ footer {
     @apply capitalize rounded-full;
   }
 
-  .hd {
+  .hd,
+  .hd2 {
     > h2 {
       @apply mb-3 text-veryDarkDesaturatedBlue font-bold text-[18px];
     }
@@ -135,7 +136,7 @@ footer {
   }
 
   li.menu:hover > ul {
-    display: unset;
+    display: none;
   }
 
   li.menu:hover > .menubtn > img {

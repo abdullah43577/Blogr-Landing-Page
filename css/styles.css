@@ -66,10 +66,12 @@ footer {
   button {
     @apply capitalize rounded-full;
   }
-  .hd > h2 {
+  .hd > h2,
+  .hd2 > h2 {
     @apply mb-3 text-veryDarkDesaturatedBlue font-bold text-[18px];
   }
-  .hd > p {
+  .hd > p,
+  .hd2 > p {
     @apply text-[14px] leading-[24px];
   }
   ul.listEl > li {
@@ -109,7 +111,7 @@ footer {
     font-size: 20px;
   }
   li.menu:hover > ul {
-    display: unset;
+    display: none;
   }
   li.menu:hover > .menubtn > img {
     transform: rotate(0deg);
