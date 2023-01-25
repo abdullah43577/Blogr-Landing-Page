@@ -16,6 +16,7 @@
 .prettierignore
 
 scss/_config.scss
+scss/_utilities.scss
 style-guide.md
 css/styles.css.map
 package-lock.json

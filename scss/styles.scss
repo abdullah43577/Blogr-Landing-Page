@@ -6,6 +6,7 @@
 @tailwind utilities;
 
 @import "config";
+@import "utilities";
 
 html {
   scroll-behavior: smooth;
@@ -39,12 +40,12 @@ header {
   padding: 15px 10px;
 }
 
-li.menu:hover > ul {
-  display: block;
-  position: absolute;
-  top: 3.5vh;
-  border-radius: 5px;
-}
+// li.menu:hover > ul {
+//   display: block;
+//   position: absolute;
+//   top: 3.5vh;
+//   border-radius: 5px;
+// }
 
 .menubtn > img {
   transform: rotate(180deg);
@@ -135,11 +136,15 @@ footer {
     font-size: 20px;
   }
 
-  li.menu:hover > ul {
-    display: none;
+  // li.menu:hover > ul {
+  //   display: unset;
+  // }
+
+  div.menubtn.activeNav > ul {
+    display: block;
   }
 
-  li.menu:hover > .menubtn > img {
+  li.menu.activeNav > .menubtn > img {
     transform: rotate(0deg);
     transition: transform 0.5s ease;
   }
