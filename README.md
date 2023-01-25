@@ -10,10 +10,7 @@ This is a solution to the [Blogr landing page challenge on Frontend Mentor](http
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -26,12 +23,15 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./design/Screenshot_17.png)
+![](./design/Screenshot_18.png)
+![](./design/Screenshot_19.png)
+![](./design/Screenshot_20.png)
 
 ### Links
 
-- Solution URL: [Solution URL here](https://your-solution-url.com)
-- Live Site URL: [Live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL here](https://www.frontendmentor.io/solutions/blogr-landing-page-XwB_3NhtBr)
+- Live Site URL: [Live site URL here](https://blogr-landingp.netlify.app/)
 
 ## My process
 
@@ -40,16 +40,9 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Desktop-first workflow
 - Javascript
 - [Tailwind Utility Components](https://tailwindcss.com/) - For styles
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ### Useful resources
 
