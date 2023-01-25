@@ -85,7 +85,7 @@ footer {
     }
 
     > p {
-      @apply text-[14px] leading-[24px];
+      @apply text-[14px] leading-[24px] md:text-left sm:text-center;
     }
   }
 

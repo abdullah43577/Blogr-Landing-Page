@@ -72,7 +72,7 @@ footer {
   }
   .hd > p,
   .hd2 > p {
-    @apply text-[14px] leading-[24px];
+    @apply text-[14px] leading-[24px] md:text-left sm:text-center;
   }
   ul.listEl > li {
     @apply sm:mt-6 md:mt-0;
