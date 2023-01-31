@@ -22,44 +22,8 @@ body {
 }
 
 header {
-  background: linear-gradient(to top left, hsl(13deg, 100%, 72%), hsl(353deg, 100%, 62%));
+  background: linear-gradient(to top right, hsl(13deg, 100%, 72%), hsl(353deg, 100%, 62%));
   border-bottom-left-radius: 50px;
-}
-
-.menu > ul > li {
-  line-height: 5px;
-  padding: 15px 5px;
-}
-
-li.menu > ul {
-  position: absolute;
-  top: 6vh;
-  border-radius: 5px;
-}
-
-li.menu:hover > ul {
-  visibility: visible;
-  opacity: 1;
-  top: 4vh;
-  transition: all 300ms ease;
-}
-
-.menubtn > img {
-  transform: rotate(180deg);
-}
-
-li.menu:hover > .menubtn > img {
-  transform: rotate(360deg);
-  transition: transform 0.5s ease;
-}
-
-.second_slide {
-  border-top-right-radius: 100px;
-  border-bottom-left-radius: 50px;
-}
-
-footer {
-  border-top-right-radius: 100px;
 }
 
 @layer components {
@@ -93,6 +57,38 @@ footer {
     @apply relative md:px-[10px] hover:underline cursor-pointer md:text-whiteTxT sm:text-veryDarkBlackBlueFooter sm:py-[10px] sm:px-0 md:py-[0px];
   }
 }
+div.menubtn ~ ul.menudrop {
+  position: absolute;
+  top: 6vh;
+  border-radius: 5px;
+}
+div.menubtn ~ ul.menudrop > li {
+  line-height: 5px;
+  padding: 15px 5px;
+}
+div.menubtn:hover ~ ul {
+  visibility: visible;
+  opacity: 1;
+  top: 4vh;
+  transition: all 300ms ease;
+}
+div.menubtn > img {
+  transform: rotate(180deg);
+}
+div.menubtn:hover > img {
+  transform: rotate(360deg);
+  transition: transform 0.5s ease;
+}
+
+.second_slide {
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 50px;
+}
+
+footer {
+  border-top-right-radius: 100px;
+}
+
 @media (max-width: 576px) {
   .left,
   .right {
@@ -123,6 +119,18 @@ footer {
     transform: rotate(0deg);
     transition: transform 0.5s ease;
   }
+  input[type=checkbox] {
+    display: none;
+  }
+  #showDrop:checked ~ ul.menudrop,
+  #showDrop2:checked ~ ul.menudrop,
+  #showDrop3:checked ~ ul.menudrop {
+    display: block;
+    visibility: visible;
+    max-height: 100%;
+    position: static;
+    background-color: lightgray;
+  }
 }
 .menubar div {
   height: 3px;
@@ -142,6 +150,16 @@ footer {
 
 .toggle .bar3 {
   transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.section {
+  transform: translateY(0rem);
+  transition: transform 0.5s ease;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
 }
 
 /*# sourceMappingURL=styles.css.map */

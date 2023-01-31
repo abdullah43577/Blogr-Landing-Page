@@ -11,11 +11,12 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="dist/output.css" type="text/css" />
+    <script defer src="/app/script.js"></script>
     <title>Frontend Mentor | [Blogr]</title>
   </head>
   <body class="relative h-full w-full">
-    <header class="h-[80vh]" id="top">
-      <div class="container pt-3">
+    <header class="h-[80vh] relative" id="top">
+      <div class="container pt-3 z-[2] relative">
         <nav class="flex justify-between items-center sm:mt-7 md:mt-0">
           <div
             class="left items-center md:flex sm:absolute md:relative sm:w-[300px] md:w-auto sm:h-[60vh] md:h-[auto] sm:bg-whiteTxT md:bg-transparent sm:top-[15vh] md:top-0"
@@ -27,8 +28,11 @@
             <ul
               class="listItem flex w-auto justify-between md:ml-10 sm:ml-0 sm:flex-col md:flex-row sm:items-center md:items-start"
             >
-              <li class="menu el">
-                <div class="menubtn flex items-center justify-center">
+              <li class="menu">
+                <div
+                  class="menubtn flex items-center justify-center sm:hidden md:flex"
+                >
+                  <!-- desktop menu -->
                   <p>Product</p>
                   <img
                     src="./images/icon-arrow-light.svg"
@@ -41,6 +45,17 @@
                     class="ml-[5px] h-[8px] md:hidden sm:block"
                   />
                 </div>
+
+                <!-- mobile menu -->
+                <input
+                  type="checkbox"
+                  id="showDrop"
+                  class="sm:block md:hidden"
+                />
+                <label for="showDrop" class="mobile sm:block md:hidden"
+                  >Product</label
+                >
+
                 <ul
                   class="menudrop invisible px-[15px] py-[20px] bg-white w-32"
                 >
@@ -52,8 +67,10 @@
                 </ul>
               </li>
 
-              <li class="menu el">
-                <div class="menubtn flex items-center justify-center">
+              <li class="menu">
+                <div
+                  class="menubtn flex items-center justify-center sm:hidden md:flex"
+                >
                   <p>Company</p>
                   <img
                     src="./images/icon-arrow-light.svg"
@@ -66,6 +83,16 @@
                     class="ml-[5px] h-[8px] md:hidden sm:block"
                   />
                 </div>
+
+                <!-- mobile menu -->
+                <input
+                  type="checkbox"
+                  id="showDrop2"
+                  class="sm:block md:hidden"
+                />
+                <label for="showDrop2" class="mobile sm:block md:hidden"
+                  >Company</label
+                >
                 <ul
                   class="menudrop invisible px-[15px] py-[20px] bg-white w-32"
                 >
@@ -76,13 +103,13 @@
                 </ul>
               </li>
 
-              <li class="menu el">
-                <div class="menubtn flex items-center">
+              <li class="menu">
+                <div class="menubtn flex items-center sm:hidden md:flex">
                   <p>Connect</p>
                   <img
                     src="./images/icon-arrow-light.svg"
                     alt="icon-arrow-light"
-                    class="ml-[5px] h-[8px] sm:hidden md:block"
+                    class="ml-[5px] h-[8px] sm:hidden md:flex"
                   />
                   <img
                     src="./images/icon-arrow-dark.svg"
@@ -90,6 +117,16 @@
                     class="ml-[5px] h-[8px] md:hidden sm:block"
                   />
                 </div>
+
+                <!-- mobile menu -->
+                <input
+                  type="checkbox"
+                  id="showDrop3"
+                  class="sm:block md:hidden"
+                />
+                <label for="showDrop3" class="mobile sm:block md:hidden"
+                  >Connect</label
+                >
                 <ul
                   class="menudrop invisible px-[15px] py-[20px] bg-white w-32"
                 >
@@ -162,7 +199,7 @@
         Designed for the future
       </h2>
       <div
-        class="container first_slide flex justify-between items-center md:flex-row sm:flex-col-reverse md:mt-4 xl:mt-0"
+        class="container first_slide flex justify-between items-center md:flex-row sm:flex-col-reverse md:mt-4 xl:mt-0 section"
       >
         <div
           class="content xl:w-[500px] sm:w-[300px] sm:text-center md:text-start"
@@ -201,13 +238,13 @@
 
       <!-- second slide -->
       <div
-        class="second_slide bg-veryDarkDesaturatedBlue md:h-[300px] sm:mt-64 sm:h-auto"
+        class="second_slide bg-veryDarkDesaturatedBlue md:h-[300px] sm:mt-64 sm:h-auto relative section"
       >
         <div
-          class="container flex md:flex-row justify-between items-center mt-4 sm:flex-col"
+          class="container flex md:flex-row justify-between items-center mt-4 sm:flex-col relative"
         >
           <picture
-            class="md:w-[400px] md:mt-[-50px] sm:mt-[-150px] sm:w-[300px]"
+            class="md:w-[400px] md:mt-[-50px] sm:mt-[-150px] sm:w-[300px] z-10"
           >
             <img
               src="./images/illustration-phones.svg"
@@ -234,7 +271,7 @@
 
       <!-- third slide -->
       <div
-        class="container first_slide flex justify-between items-center mt-14 md:flex-row-reverse sm:flex-col-reverse"
+        class="container first_slide flex justify-between items-center mt-14 md:flex-row-reverse sm:flex-col-reverse section"
       >
         <div class="content md:w-1/2 sm:w-auto text-center lg:mr-6 xl:mr-0">
           <div class="hd mb-14">
@@ -270,7 +307,9 @@
     </main>
 
     <!-- footer section -->
-    <footer class="relative bg-veryDarkBlackBlueFooter md:mt-0 sm:mt-32">
+    <footer
+      class="relative bg-veryDarkBlackBlueFooter md:mt-0 sm:mt-32 section"
+    >
       <div
         class="content container flex md:flex-row md:items-start justify-between pt-10 pb-8 sm:flex-col sm:items-start"
       >
@@ -330,7 +369,5 @@
         <a href="#top" class="capitalize">back to top</a>
       </div>
     </footer>
-
-    <script src="/app/script.js"></script>
   </body>
 </html>

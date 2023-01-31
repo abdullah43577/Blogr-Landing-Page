@@ -28,47 +28,11 @@ body {
 
 header {
   background: linear-gradient(
-    to top left,
+    to top right,
     hsl(13, 100%, 72%),
     hsl(353, 100%, 62%)
   );
   @include borderRadius(bottom);
-}
-
-.menu > ul > li {
-  line-height: 5px;
-  padding: 15px 5px;
-}
-
-li.menu > ul {
-  position: absolute;
-  top: 6vh;
-  border-radius: 5px;
-}
-
-li.menu:hover > ul {
-  visibility: visible;
-  opacity: 1;
-  top: 4vh;
-  transition: all 300ms ease;
-}
-
-.menubtn > img {
-  transform: rotate(180deg);
-}
-
-li.menu:hover > .menubtn > img {
-  transform: rotate(360deg);
-  transition: transform 0.5s ease;
-}
-
-.second_slide {
-  @include borderRadius(top);
-  @include borderRadius(bottom);
-}
-
-footer {
-  @include borderRadius(top);
 }
 
 @layer components {
@@ -114,6 +78,43 @@ footer {
   }
 }
 
+div.menubtn {
+  ~ ul.menudrop {
+    position: absolute;
+    top: 6vh;
+    border-radius: 5px;
+
+    > li {
+      line-height: 5px;
+      padding: 15px 5px;
+    }
+  }
+
+  &:hover ~ ul {
+    visibility: visible;
+    opacity: 1;
+    top: 4vh;
+    transition: all 300ms ease;
+  }
+
+  & > img {
+    transform: rotate(180deg);
+  }
+  &:hover > img {
+    transform: rotate(360deg);
+    transition: transform 0.5s ease;
+  }
+}
+
+.second_slide {
+  @include borderRadius(top);
+  @include borderRadius(bottom);
+}
+
+footer {
+  @include borderRadius(top);
+}
+
 @media (max-width: 576px) {
   .left,
   .right {
@@ -150,6 +151,20 @@ footer {
     transform: rotate(0deg);
     transition: transform 0.5s ease;
   }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  #showDrop:checked ~ ul.menudrop,
+  #showDrop2:checked ~ ul.menudrop,
+  #showDrop3:checked ~ ul.menudrop {
+    display: block;
+    visibility: visible;
+    max-height: 100%;
+    position: static;
+    background-color: lightgray;
+  }
 }
 
 .menubar div {
@@ -170,4 +185,16 @@ footer {
 
 .toggle .bar3 {
   transform: rotate(45deg) translate(-5px, -6px);
+}
+
+// intersection observer API section
+
+.section {
+  transform: translateY(0rem);
+  transition: transform 0.5s ease;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
 }
