@@ -804,6 +804,10 @@ li.menu:hover{
   justify-content: space-around;
 }
 
+.overflow-hidden{
+  overflow: hidden;
+}
+
 .rounded{
   border-radius: 0.25rem;
 }
